@@ -1,304 +1,37 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publication - Bryce Zhou Dashboard</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Sidebar -->
-    <div class="sidebar">
-        <div class="logo">
-            <h1>Bryce Zhou</h1>
-        </div>
-        
-        <div class="menu">
-            <div class="menu-section">
-                <h3>Institute</h3>
-                <a href="institute.html" class="menu-item">
-                    <i class="fas fa-tachometer-alt"></i>
-                    <span>Introduction</span>
-                </a>
-            </div>
-            
-            <div class="menu-section">
-                <h3>Teaching</h3>
-                <a href="teaching.html" class="menu-item">
-                    <i class="fas fa-chalkboard-teacher"></i>
-                    <span>Lectures</span>
-                </a>
-                <a href="teaching.html#charts" class="menu-item">
-                    <i class="fas fa-chart-bar"></i>
-                    <span>Charts</span>
-                </a>
-                <a href="teaching.html#tabs" class="menu-item">
-                    <i class="fas fa-folder"></i>
-                    <span>Tabs & Panels</span>
-                </a>
-                <a href="teaching.html#tables" class="menu-item">
-                    <i class="fas fa-table"></i>
-                    <span>Responsive Tables</span>
-                </a>
-                <a href="teaching.html#forms" class="menu-item">
-                    <i class="fas fa-edit"></i>
-                    <span>Forms</span>
-                </a>
-            </div>
-            
-            <div class="menu-section">
-                <h3>Publication</h3>
-                <div class="menu-item active" id="dropdown-toggle">
-                    <i class="fas fa-sitemap"></i>
-                    <span>Multi-Level Dropdown</span>
-                    <i class="fas fa-chevron-down" style="margin-left: auto;"></i>
-                </div>
-                
-                <div class="submenu active" id="dropdown-menu">
-                    <a href="publication.html#journal" class="menu-item">
-                        <span>Journal</span>
-                    </a>
-                    <a href="publication.html#conference" class="menu-item">
-                        <span>Conference</span>
-                    </a>
-                    <a href="publication.html#talk" class="menu-item">
-                        <span>Talk</span>
-                    </a>
-                    
-                    <div class="menu-item" id="third-level-toggle">
-                        <span>Video</span>
-                        <i class="fas fa-chevron-down" style="margin-left: auto;"></i>
-                    </div>
-                    
-                    <div class="submenu" id="third-level-menu">
-                        <a href="publication.html#video1" class="menu-item">
-                            <span>Video Tutorials</span>
-                        </a>
-                        <a href="publication.html#video2" class="menu-item">
-                            <span>Conference Recordings</span>
-                        </a>
-                        <a href="publication.html#video3" class="menu-item">
-                            <span>Lecture Recordings</span>
-                        </a>
-                    </div>
-                </div>
-                
-                <a href="publication.html#empty" class="menu-item">
-                    <i class="far fa-file"></i>
-                    <span>Empty Page</span>
-                </a>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Main Content -->
-    <div class="main-content">
-        <!-- Journal Section -->
-        <div id="journal" class="page-section">
-            <div class="header">
-                <h1>Journal Publications</h1>
-                <p>Browse our faculty's journal publications and research papers.</p>
-            </div>
-            
-            <div class="content-card">
-                <h2>Recent Journal Articles</h2>
-                <ul>
-                    <li>
-                        <strong>"Advancements in Neural Network Architectures"</strong><br>
-                        <em>Journal of Artificial Intelligence Research, 2023</em><br>
-                        Authors: Bryce Zhou, Maria Rodriguez, James Wilson
-                    </li>
-                    <li>
-                        <strong>"Data Privacy in Educational Technology"</strong><br>
-                        <em>International Journal of Computer Security, 2022</em><br>
-                        Authors: Sarah Chen, Bryce Zhou
-                    </li>
-                    <li>
-                        <strong>"Visual Analytics for Large Educational Datasets"</strong><br>
-                        <em>IEEE Transactions on Visualization, 2022</em><br>
-                        Authors: Bryce Zhou, Alex Johnson
-                    </li>
-                    <li>
-                        <strong>"Machine Learning Approaches to Educational Data Mining"</strong><br>
-                        <em>Journal of Educational Technology, 2021</em><br>
-                        Authors: Bryce Zhou, Kimsila Marriye
-                    </li>
-                </ul>
-            </div>
-            
-            <div class="content-card">
-                <h2>Publication Metrics</h2>
-                <div class="stats">
-                    <div class="stat-card">
-                        <div class="stat-value">42</div>
-                        <div class="stat-label">Total Publications</div>
-                        <div class="stat-icon">
-                            <i class="fas fa-book"></i>
-                        </div>
-                    </div>
-                    
-                    <div class="stat-card">
-                        <div class="stat-value">1,258</div>
-                        <div class="stat-label">Total Citations</div>
-                        <div class="stat-icon">
-                            <i class="fas fa-quote-right"></i>
-                        </div>
-                    </div>
-                    
-                    <div class="stat-card">
-                        <div class="stat-value">18.5</div>
-                        <div class="stat-label">H-Index</div>
-                        <div class="stat-icon">
-                            <i class="fas fa-chart-bar"></i>
-                        </div>
-                    </div>
-                    
-                    <div class="stat-card">
-                        <div class="stat-value">8</div>
-                        <div class="stat-label">Publications This Year</div>
-                        <div class="stat-icon">
-                            <i class="fas fa-calendar"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Conference Section -->
-        <div id="conference" class="page-section">
-            <div class="header">
-                <h1>Conference Publications</h1>
-                <p>Papers presented at international conferences and symposiums.</p>
-            </div>
-            
-            <div class="content-card">
-                <h2>Recent Conference Papers</h2>
-                <ul>
-                    <li>
-                        <strong>"Real-time Data Processing for Educational Analytics"</strong><br>
-                        <em>International Conference on Data Science, 2023</em><br>
-                        Authors: Bryce Zhou, James Wilson, Sarah Chen
-                    </li>
-                    <li>
-                        <strong>"Blockchain Applications in Academic Credentialing"</strong><br>
-                        <em>IEEE Conference on Blockchain Technology, 2022</em><br>
-                        Authors: Bryce Zhou, Maria Rodriguez
-                    </li>
-                    <li>
-                        <strong>"Adaptive Learning Systems Using AI"</strong><br>
-                        <em>ACM Conference on Learning at Scale, 2022</em><br>
-                        Authors: Alex Johnson, Bryce Zhou
-                    </li>
-                </ul>
-            </div>
-        </div>
-        
-        <!-- Talk Section -->
-        <div id="talk" class="page-section">
-            <div class="header">
-                <h1>Talks & Presentations</h1>
-                <p>Invited talks, keynote presentations, and seminar series.</p>
-            </div>
-            
-            <div class="content-card">
-                <h2>Upcoming Talks</h2>
-                <div class="lecture-list">
-                    <div class="lecture-card">
-                        <h4>Keynote: The Future of AI in Education</h4>
-                        <p><strong>Event:</strong> International EdTech Conference</p>
-                        <p><strong>Date:</strong> November 10, 2023</p>
-                        <p><strong>Location:</strong> San Francisco, CA</p>
-                    </div>
-                    <div class="lecture-card">
-                        <h4>Seminar: Data Visualization Best Practices</h4>
-                        <p><strong>Event:</strong> University Research Symposium</p>
-                        <p><strong>Date:</strong> December 5, 2023</p>
-                        <p><strong>Location:</strong> Campus Auditorium</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="content-card">
-                <h2>Past Presentations</h2>
-                <ul>
-                    <li>"Machine Learning in Educational Assessment" - Data Science Summit, 2022</li>
-                    <li>"Visual Analytics for Student Success" - Education Innovation Conference, 2022</li>
-                    <li>"Blockchain for Academic Records" - Tech in Education Forum, 2021</li>
-                </ul>
-            </div>
-        </div>
-        
-        <!-- Video Sections -->
-        <div id="video1" class="page-section">
-            <div class="header">
-                <h1>Video Tutorials</h1>
-                <p>Educational video content and tutorials.</p>
-            </div>
-            
-            <div class="content-card">
-                <h2>Available Tutorials</h2>
-                <ul>
-                    <li>Introduction to Python Programming (45 minutes)</li>
-                    <li>Data Visualization with D3.js (60 minutes)</li>
-                    <li>Machine Learning Fundamentals (90 minutes)</li>
-                    <li>Web Development Best Practices (75 minutes)</li>
-                </ul>
-            </div>
-        </div>
-        
-        <div id="video2" class="page-section">
-            <div class="header">
-                <h1>Conference Recordings</h1>
-                <p>Recorded presentations from conferences and seminars.</p>
-            </div>
-            
-            <div class="content-card">
-                <h2>Available Recordings</h2>
-                <ul>
-                    <li>International EdTech Conference 2023 - Keynote Address</li>
-                    <li>Data Science Summit 2022 - Panel Discussion</li>
-                    <li>Education Innovation Conference 2022 - Workshop</li>
-                </ul>
-            </div>
-        </div>
-        
-        <div id="video3" class="page-section">
-            <div class="header">
-                <h1>Lecture Recordings</h1>
-                <p>Recorded lectures from current and past courses.</p>
-            </div>
-            
-            <div class="content-card">
-                <h2>Course Recordings</h2>
-                <ul>
-                    <li>CS101 - Introduction to Programming (Full Semester)</li>
-                    <li>DS201 - Data Structures (Full Semester)</li>
-                    <li>CS301 - Algorithms (Selected Lectures)</li>
-                </ul>
-            </div>
-        </div>
-        
-        <!-- Empty Page Section -->
-        <div id="empty" class="page-section">
-            <div class="header">
-                <h1>Empty Page</h1>
-                <p>This is a placeholder page with no content.</p>
-            </div>
-            
-            <div class="content-card">
-                <h2>Page Under Construction</h2>
-                <p>This page is currently empty and under development. Content will be added in the future.</p>
-            </div>
-        </div>
-        
-        <!-- Footer -->
-        <div class="footer">
-            <p>© 2025 Bryce Zhou. All rights reserved.</p>
-        </div>
-    </div>
+<div class="header">
+    <h1>Publication Overview</h1>
+    <p>A consolidated view of all research output, including journals, conferences, talks, and video content.</p>
+</div>
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="script.js"></script>
-</body>
-</html>
+<div class="content-card">
+    <h2>1. Journal Publications</h2>
+    <ul>
+        <li>
+            <strong>"Advancements in Neural Network Architectures"</strong><br>
+            <em>Journal of Artificial Intelligence Research, 2023</em><br>
+            Authors: Bryce Zhou, Maria Rodriguez, James Wilson
+        </li>
+        <li>
+            <strong>"Data Privacy in Educational Technology"</strong><br>
+            <em>International Journal of Computer Security, 2022</em><br>
+            Authors: Sarah Chen, Bryce Zhou
+        </li>
+        <li>
+            <strong>"Visual Analytics for Large Educational Datasets"</strong><br>
+            <em>IEEE Transactions on Visualization, 2022</em><br>
+            Authors: Bryce Zhou, Alex Johnson
+        </li>
+    </ul>
+</div>
+
+<div class="content-card">
+    <h2>2. Conference Proceedings & Talks</h2>
+    <p>List of accepted papers and presentations at major conferences will be displayed here.</p>
+    <p><em>Content for Conference and Talk items is currently a placeholder.</em></p>
+</div>
+
+<div class="content-card">
+    <h2>3. Video Resources</h2>
+    <p>A library of video tutorials, conference recordings, and lecture recordings.</p>
+    <p><em>Content for Video Tutorials, Conference Recordings, and Lecture Recordings items is currently a placeholder.</em></p>
+</div>
